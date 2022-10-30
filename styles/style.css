@@ -1,5 +1,6 @@
 body{
     font-family:'Poppins', sans-serif;
+    width:100%;
 }
 
 section, footer{
@@ -20,8 +21,26 @@ section, footer{
     justify-content: space-between;
 }
 
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width:100%;
+}
+
 .small-padding{
     padding:90px 0;
+}
+
+.small-margin{
+    margin-bottom:10px;
+}
+
+.bigger-margin{
+    margin-bottom:20px;
 }
 
 .logo span{
@@ -45,12 +64,27 @@ h1{
     color:white;
     font-size:42px;
     font-weight:800;
+    margin-bottom:14px;
+}
+
+.hero-nav{
+    justify-content: flex-start;
 }
 
 .hero-nav a{
     color:white;
     font-size:14px;
     font-weight:500;
+    transition: all 1s linear;
+}
+
+.hero-nav a:hover{
+    color:#5863F8;
+}
+
+.hero-nav a:first-child,
+.hero-nav img{
+    margin-right:14.5px;
 }
 
 h5{
@@ -63,6 +97,16 @@ h2{
     font-size:42px;
     font-weight:800;
     line-height: 56px;
+    max-width:565px;
+}
+
+.details h2,
+.testimonial h2{
+    margin-bottom:34px;
+}
+
+.photos h2{
+    margin-bottom:50px;
 }
 
 .medium{
@@ -87,6 +131,10 @@ button{
     border:none;
 }
 
+button span{
+    margin-right:10px;
+}
+
 
 .details h2{
     color:white;
@@ -95,8 +143,14 @@ button{
 
 
 .card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width:260px;
     height:260px;
+    background-color: white;
 }
 
 .icon{
@@ -107,6 +161,7 @@ button{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-bottom:15px;
 }
 
 h4{
@@ -114,6 +169,7 @@ h4{
     font-weight:600;
     max-width:166px;
     line-height: 27px;
+    margin-bottom:20px;
 
 }
 
@@ -125,21 +181,27 @@ h4{
     max-width:221px;
 }
 
+
+
 .top span{
     font-size:18px;
     font-weight:600;
     line-height: 27px;
 }
 
-.commnet{
+.comment{
     font-size:14px;
     font-weight:500;
     line-height: 21px;
+    max-width:352px;
+}
+
+.socials{
+    margin-bottom:54px;
 }
 
 .socials .logo span{
     font-size: 24px;
-    color:black;
 }
 
 .socials .grey{
@@ -150,6 +212,11 @@ h3{
     font-size:18px;
     font-weight:600;
     color:white;
+    margin-bottom:20px;
+}
+
+.footer-item{
+    margin-bottom:10px;
 }
 
 .footer-item a{
@@ -158,10 +225,19 @@ h3{
     font-weight:500;
 }
 
+.contact-item{
+    margin-bottom:20px;
+}
+
 .contact-item span{
     color:white;
     font-size:14px;
     font-weight:500;
+}
+
+.contact-info i{
+    color:#5863F8;
+    margin-right:14px;
 }
 
 .copyright{
@@ -175,13 +251,125 @@ h3{
 }
 
 .header{
+    background-image: url('../images/mohamed-ajufaan-GFcWwwGNu_w-unsplash.png');
     padding-top:30px;
     padding-bottom:6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    max-height:324px;
+    z-index: 5;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image: url('../images/Rectangle\ 193.png');
+    z-index: -2;
+}
+
+header, nav{
+    width:100%;
+}
+
+nav .logo{
+    width:10%;
+}
+
+nav ul{
+    width:52%;
+}
+
+.about .left{
+   width:45%;
+}
+
+.about .right{
+    width:50%;
+    max-width:536px;
+}
+
+.about .right img:first-child{
+    margin-right:16px;
+}
+
+.about .top{
+    margin-bottom:16px;
+}
+
+.testimonial{
+    max-height:487px;
+    position: relative;
+    background-color: #F8F8F8;
+}
+
+.testimonial .right img{
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.testimonial .left{
+    width:50%;
+}
+
+.testimonial .right{
+    width:45%;
+}
+
+.testimonial-container .top span{
+    vertical-align: top;
+    margin-left:19px;
+}
+
+.photos img{
+    max-width:352px;
+    max-height:352px;
+    object-fit: cover;
+}
+
+.photos-container{
+    justify-content: space-between;
+}
+
+
+
+.details{
+    background-image: url('../images/chris-lee-70l1tDAI6rM-unsplash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    max-height:612px;
+    z-index: 5;
+}
+
+.details::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image: url('../images/Rectangle\ 209.png');
+    z-index: -2;
 }
 
 footer{
     padding-top:90px;
     padding-bottom:40px;
+    background-color: #121212;
+}
+
+.social-icons img:first-child,
+.social-icons img:nth-child(2){
+    margin-right:10.4px;
 }
 
 .testimonial .left{
