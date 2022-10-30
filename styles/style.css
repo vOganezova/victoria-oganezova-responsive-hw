@@ -1,0 +1,195 @@
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+section, footer{
+    max-width:1366px;
+    width:100%;
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+}
+
+.flex{
+    display:flex;
+}
+
+.justify{
+    justify-content: space-between;
+}
+
+.small-padding{
+    padding:90px 0;
+}
+
+.logo span{
+    font-size:14px;
+    font-weight:700;
+    color:white;
+}
+
+.nav-link{
+    font-size:12px;
+    font-weight:600;
+    color:white;
+    transition: all 1s linear;
+}
+
+.nav-link:hover{
+    color:#5863F8;
+}
+
+h1{
+    color:white;
+    font-size:42px;
+    font-weight:800;
+}
+
+.hero-nav a{
+    color:white;
+    font-size:14px;
+    font-weight:500;
+}
+
+h5{
+    font-size:14px;
+    font-weight:700;
+    color:#5863F8;
+}
+
+h2{
+    font-size:42px;
+    font-weight:800;
+    line-height: 56px;
+}
+
+.medium{
+    font-size:16px;
+    font-weight:500;
+    line-height: 25px;
+}
+
+.regular{
+    font-size:14px;
+    font-weight: 400;
+    line-height:21px;
+}
+
+button{
+    font-size:14px;
+    font-weight:400px;
+    color:white;
+    background-color: #5863F8;
+    width:184px;
+    height:50px;
+    border:none;
+}
+
+
+.details h2{
+    color:white;
+}
+
+
+
+.card{
+    width:260px;
+    height:260px;
+}
+
+.icon{
+    width:59px;
+    height:58px;
+    border-radius: 50%;
+    background-color: #5863F8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    font-size:18px;
+    font-weight:600;
+    max-width:166px;
+    line-height: 27px;
+
+}
+
+.grey{
+    font-size:14px;
+    font-weight:500;
+    line-height: 21px;
+    color:#B1B1B1;
+    max-width:221px;
+}
+
+.top span{
+    font-size:18px;
+    font-weight:600;
+    line-height: 27px;
+}
+
+.commnet{
+    font-size:14px;
+    font-weight:500;
+    line-height: 21px;
+}
+
+.socials .logo span{
+    font-size: 24px;
+    color:black;
+}
+
+.socials .grey{
+    max-width:260px;
+}
+
+h3{
+    font-size:18px;
+    font-weight:600;
+    color:white;
+}
+
+.footer-item a{
+    color:#5863F8;
+    font-size:14px;
+    font-weight:500;
+}
+
+.contact-item span{
+    color:white;
+    font-size:14px;
+    font-weight:500;
+}
+
+.copyright{
+    color:#B1B1B1;
+    font-size:14px;
+    font-weight:500;
+}
+
+.copyright span{
+    color:#5863F8;
+}
+
+.header{
+    padding-top:30px;
+    padding-bottom:6px;
+}
+
+footer{
+    padding-top:90px;
+    padding-bottom:40px;
+}
+
+.testimonial .left{
+    padding-top:76px;
+    padding-bottom:106px;
+}
+
+.caption{
+    padding-top:90px;
+    padding-bottom:50px;
+}
