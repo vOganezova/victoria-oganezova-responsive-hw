@@ -5,6 +5,7 @@ body{
 
 section, footer{
     max-width:1366px;
+    min-width: 100vw;
     width:100%;
 }
 
@@ -15,6 +16,7 @@ section, footer{
 
 .flex{
     display:flex;
+    flex-wrap: wrap;
 }
 
 .justify{
@@ -41,6 +43,65 @@ img{
 
 .bigger-margin{
     margin-bottom:20px;
+}
+
+
+
+
+
+
+
+
+.header{
+    width:100%;
+    background-image: url('../images/mohamed-ajufaan-GFcWwwGNu_w-unsplash.png');
+    padding-top:30px;
+    padding-bottom:6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    max-height:324px;
+    z-index: 5;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image: url('../images/Rectangle\ 193.png');
+    z-index: -2;
+}
+
+header, nav{
+    width:100%;
+}
+
+nav .logo{
+    width:10%;
+}
+
+nav ul{
+    width:52%;
+}
+
+@media (max-width:769px) {
+
+    .header{
+        max-height:100vh;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav ul li{
+        margin-bottom:10px;
+        margin-right:0;
+    }
 }
 
 .logo span{
@@ -87,6 +148,66 @@ h1{
     margin-right:14.5px;
 }
 
+
+
+
+
+
+.about .left{
+    width:45%;
+ }
+ 
+ .about .right{
+     width:50%;
+     max-width:536px;
+ }
+
+.about .right .top{
+    width:100%;
+}
+
+ .about .right .top img{
+    width:48%;
+    object-fit: cover;
+ }
+ 
+ .about .right img:first-child{
+     margin-right:16px;
+ }
+ 
+ .about .top{
+     margin-bottom:16px;
+ }
+
+@media (max-width:1000px){
+    .about .right .top{
+        flex-direction: column;
+    }
+
+    .about .right .top img{
+        width:100%;
+    }
+
+    .about .right .top img:first-child{
+        margin-bottom:20px;
+    }
+}
+
+@media (max-width:580px){
+    .about .container{
+        flex-direction: column;
+    }
+
+    .about .container .right,
+    .about .container .left{
+        width:100%;
+    }
+
+    .about .container .left{
+        margin-bottom:50px;
+    }
+}
+
 h5{
     font-size:14px;
     font-weight:700;
@@ -103,10 +224,6 @@ h2{
 .details h2,
 .testimonial h2{
     margin-bottom:34px;
-}
-
-.photos h2{
-    margin-bottom:50px;
 }
 
 .medium{
@@ -136,11 +253,50 @@ button span{
 }
 
 
+
+
+
+
+.details{
+    background-image: url('../images/chris-lee-70l1tDAI6rM-unsplash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    max-height:612px;
+    z-index: 5;
+}
+
+.details::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image: url('../images/Rectangle\ 209.png');
+    z-index: -2;
+}
+
 .details h2{
     color:white;
 }
 
+.card-container{
+    align-content:space-between;
+}
 
+@media (max-width:1300px){
+    .details{
+        min-height:850px;
+    }
+}
+
+@media (max-width:650px){
+    .details{
+        min-height: 1300px;
+    }
+}
 
 .card{
     display:flex;
@@ -183,6 +339,35 @@ h4{
 
 
 
+
+
+
+.testimonial{
+    max-height:487px;
+    position: relative;
+    background-color: #F8F8F8;
+}
+
+.testimonial .right img{
+    position: absolute;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.testimonial .left{
+    width:50%;
+}
+
+.testimonial .right{
+    width:45%;
+}
+
+.testimonial-container .top span{
+    vertical-align: top;
+    margin-left:19px;
+}
+
 .top span{
     font-size:18px;
     font-weight:600;
@@ -194,6 +379,88 @@ h4{
     font-weight:500;
     line-height: 21px;
     max-width:352px;
+}
+.testimonial .left{
+    padding-top:76px;
+    padding-bottom:106px;
+}
+
+.caption{
+    padding-top:90px;
+    padding-bottom:50px;
+}
+
+@media (max-width:1150px){
+
+    .testimonial .container{
+        flex-direction: column;
+    }
+
+    .testimonial .right img{
+       top:20%;
+       width:45%;
+       height:50%;
+       object-fit: cover;
+    }
+}
+
+@media (max-width:600px){
+
+    .testimonial{
+        align-items: center;
+        min-height:870px;
+    }
+
+    .testimonial .left,
+    .testimonial .right{
+        width:100%;
+    }
+
+    .testimonial .right img{
+        position: static;
+        width:100%;
+    }
+
+    
+}
+
+
+
+
+
+.photos img{
+    max-width:352px;
+    max-height:352px;
+    object-fit: cover;
+}
+
+.photos-container{
+    align-content: center;
+}
+
+.photos h2{
+    margin-bottom:50px;
+}
+
+@media (max-width:352px){
+    .photos img{
+        max-width:100vw;
+    }
+}
+
+
+
+
+
+footer{
+    padding-top:90px;
+    padding-bottom:40px;
+    background-color: #121212;
+}
+
+.social-icons img:first-child,
+.social-icons img:nth-child(2){
+    margin-right:10.4px;
 }
 
 .socials{
@@ -244,140 +511,41 @@ h3{
     color:#B1B1B1;
     font-size:14px;
     font-weight:500;
+    line-height: 21px;
 }
 
 .copyright span{
     color:#5863F8;
 }
 
-.header{
-    background-image: url('../images/mohamed-ajufaan-GFcWwwGNu_w-unsplash.png');
-    padding-top:30px;
-    padding-bottom:6px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    max-height:324px;
-    z-index: 5;
-}
+@media (max-width:465px){
+    .socials{
+        margin-right:20px;
+    }
 
-.header::after{
-    content: "";
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background-image: url('../images/Rectangle\ 193.png');
-    z-index: -2;
-}
-
-header, nav{
-    width:100%;
-}
-
-nav .logo{
-    width:10%;
-}
-
-nav ul{
-    width:52%;
-}
-
-.about .left{
-   width:45%;
-}
-
-.about .right{
-    width:50%;
-    max-width:536px;
-}
-
-.about .right img:first-child{
-    margin-right:16px;
-}
-
-.about .top{
-    margin-bottom:16px;
-}
-
-.testimonial{
-    max-height:487px;
-    position: relative;
-    background-color: #F8F8F8;
-}
-
-.testimonial .right img{
-    position: absolute;
-    right:0;
-    top:0;
-    bottom:0;
-}
-
-.testimonial .left{
-    width:50%;
-}
-
-.testimonial .right{
-    width:45%;
-}
-
-.testimonial-container .top span{
-    vertical-align: top;
-    margin-left:19px;
-}
-
-.photos img{
-    max-width:352px;
-    max-height:352px;
-    object-fit: cover;
-}
-
-.photos-container{
-    justify-content: space-between;
+    .contact-info{
+        margin-top:20px;
+    }
 }
 
 
 
-.details{
-    background-image: url('../images/chris-lee-70l1tDAI6rM-unsplash.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    max-height:612px;
-    z-index: 5;
+
+@media (max-width:990px){
+    h2{
+        font-size:30px;
+        line-height: 32px;
+        margin-top:20px;
+    }
 }
 
-.details::after{
-    content: "";
-    position: absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background-image: url('../images/Rectangle\ 209.png');
-    z-index: -2;
-}
 
-footer{
-    padding-top:90px;
-    padding-bottom:40px;
-    background-color: #121212;
-}
 
-.social-icons img:first-child,
-.social-icons img:nth-child(2){
-    margin-right:10.4px;
-}
 
-.testimonial .left{
-    padding-top:76px;
-    padding-bottom:106px;
-}
 
-.caption{
-    padding-top:90px;
-    padding-bottom:50px;
-}
+
+
+
+
+
+
